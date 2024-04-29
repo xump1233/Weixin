@@ -1,0 +1,21 @@
+/* pages/compare/compare.wxss */
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200rpx;
+}
+
+.numberText{
+    color: skyblue;
+    font-size: 40rpx;
+}
+.inputNumber{
+    border-bottom: 4rpx solid #666;
+    margin: 20rpx 20rpx;
+    padding: 0 20rpx;
+    text-align: center;
+}
+.inputBtn{
+    margin:20rpx;
+    background-color: rgb(206, 119, 119);
+}

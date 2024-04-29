@@ -1,0 +1,17 @@
+<!--pages/compare/compare.wxml-->
+<view class="box">
+    <view>
+        <text class="numberText">请输入第一个数：</text>
+        <input type="number" class="inputNumber" model:value="{{num1}}"/>
+    </view>
+    <view>
+        <text class="numberText">请输入第二个数：</text>
+        <input type="number" class="inputNumber" model:value="{{num2}}"/>
+    </view>
+    <view>
+        <button class="inputBtn" bindtap="compare">比划比划</button>
+    </view>
+    <view>
+        <text>结果是：{{result}}</text>
+    </view>
+</view>
