@@ -5,5 +5,4 @@
     Weixin123123
     <button bindtap="jumpTo" class="jumpBtn">跳一下</button>
   </view>
-
 </scroll-view>
