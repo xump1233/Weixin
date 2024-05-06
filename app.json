@@ -1,11 +1,14 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/compare/compare"
+        "pages/compare/compare",
+        "pages/jump/jump",
+        "pages/target/target"
     ],
     "window":{
         "navigationBarBackgroundColor": "#346",
-        "navigationBarTitleText": "比划比划"
+        "navigationBarTitleText": "比划比划",
+        "enablePullDownRefresh": true
     },
 
     "tabBar": {

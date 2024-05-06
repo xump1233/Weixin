@@ -2,6 +2,8 @@
 <navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
-    Weixin
+    Weixin123123
+    <button bindtap="jumpTo" class="jumpBtn">跳一下</button>
   </view>
+
 </scroll-view>
