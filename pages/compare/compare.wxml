@@ -1,5 +1,5 @@
 <!--pages/compare/compare.wxml-->
-<view class="box">
+<view class="box" catchtouchmove="touch">
     <view>
         <text class="numberText">请输入第一个数：</text>
         <input type="number" class="inputNumber" model:value="{{num1}}"/>
