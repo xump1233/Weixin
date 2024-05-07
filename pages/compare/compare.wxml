@@ -10,6 +10,7 @@
     </view>
     <view>
         <button class="inputBtn" bindtap="compare">比划比划</button>
+        <button class="inputBtn" bindtap="clearNum">清空一下</button>
     </view>
     <view>
         <text>结果是：{{result}}</text>

@@ -1,4 +1,6 @@
 /* pages/compare/compare.wxss */
+@import './mycss.wxss';
+
 .box{
     display: flex;
     flex-direction: column;

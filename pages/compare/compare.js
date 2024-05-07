@@ -18,8 +18,6 @@ Page({
         this.setData({result:'快去比较比较'})
     },
     compare(){
-        console.log(this.data.num1)
-        console.log(this.data.num2)
         if(this.data.num1>this.data.num2){
             this.setData({result:'第一个比第二个更大'})
         }
@@ -27,6 +25,13 @@ Page({
             this.setData({result:'第二个比第一个更大'})
         }
         
+    },
+    clearNum(){
+        this.setData({
+            num1:'',
+            num2:'',
+            result:'快去比较比较'
+        })
     },
     /**
      * 生命周期函数--监听页面初次渲染完成
