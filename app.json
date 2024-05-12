@@ -3,7 +3,8 @@
         "pages/index/index",
         "pages/compare/compare",
         "pages/jump/jump",
-        "pages/target/target"
+        "pages/target/target",
+        "pages/userform/userform"
     ],
     "window":{
         "navigationBarBackgroundColor": "#346",

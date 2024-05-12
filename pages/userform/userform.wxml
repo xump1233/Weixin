@@ -1,0 +1,31 @@
+<!--pages/userform/userform.wxml-->
+<view class="formBox">
+    <text class="formTitle">填一填</text>
+    <view>
+        <label for="name">
+            <text>姓名：</text>
+        </label>
+        <input type="text" id="name"/>
+    </view>
+    <view>
+        <text>性别:</text>
+        <radio-group bindchange="">
+            <radio id="gender0" name="gender"/>
+            <label for="gender0">男</label>
+            <radio id="gender1" name="gender"/>
+            <label for="gender1">女</label>
+        </radio-group>
+    </view>
+    <view>
+        <text>专业技能:</text>
+        <label for=""><checkbox value="HTML"/>HTML</label>
+        <label for=""><checkbox value="CSS"/>CSS</label>
+        <label for=""><checkbox value="JavaScript"/>JavaScript</label>
+        <label for=""><checkbox value="Vue"/>Vue</label>
+        <label for=""><checkbox value="React"/>React</label>
+    </view>
+    <view>
+        <text>指导意见</text>
+        <textarea value="" style="border: 1px solid red;"/>
+    </view>
+</view>

@@ -4,5 +4,6 @@
   <view class="container">
     Weixin123123
     <button bindtap="jumpTo" class="jumpBtn">跳一下</button>
+    <button bindtap="toForm" class="jumpBtn">填一个表单</button>
   </view>
 </scroll-view>

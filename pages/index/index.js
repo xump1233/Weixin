@@ -5,6 +5,11 @@ Page({
           url: '/pages/target/target',
         })
     },
+    toForm(){
+        wx.navigateTo({
+          url: '/pages/userform/userform',
+        })
+    },
     onPullDownRefresh(){
         console.log('别往下拉了。。。')
     },
