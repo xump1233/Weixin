@@ -5,9 +5,53 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        onceForm:{
+            name:'xxhh',
+            gender:'男',
+            skills:[
+                {
+                    name:'HTML',
+                    isChecked:true
+                },
+                {
+                    name:'CSS',
+                    isChecked:true
+                },
+                {
+                    name:'JavaScript',
+                    isChecked:true
+                },
+                {
+                    name:'Vue',
+                    isChecked:false
+                },
+                {
+                    name:'React',
+                    isChecked:false
+                }
+            ],
+            suggest:''
+        }
     },
-
+    submitForm(){
+        let form = this.data.onceForm
+        new Promise((resolve,reject)=>{
+            wx.request({
+                url: 'http://127.0.0.1:8000',
+                method:'POST',
+                data:form,
+                success(res){
+                  resolve(res.data)
+                },
+                fail(err){
+                    reject(err)
+                }
+              })
+        }).then(value=>{
+            this.setData({onceForm:value})
+        })
+        
+    },
     /**
      * 生命周期函数--监听页面加载
      */
