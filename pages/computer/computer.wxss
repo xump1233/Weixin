@@ -1,0 +1,36 @@
+/* pages/computer/computer.wxss */
+.computerBox{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    width:100%;
+    flex-grow: 1;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.keyBox{
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.keyBox>button{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ewr{
+    color:orange
+}

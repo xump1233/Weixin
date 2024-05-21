@@ -1,0 +1,29 @@
+<!--pages/computer/computer.wxml-->
+<view class="computerBox">
+    <view class="content">
+        <view wx:for="{{content}}">
+            {{item}}
+        </view>
+    </view>
+    <view class="keyBox">
+        <button style="color: red;" bindtap="clear">C</button>
+        <button bindtap="delete">DEL</button>
+        <button class="ewr">%</button>
+        <button class="ewr" bindtap="addOp" data-value="÷">÷</button>
+        <button bindtap="addNum" data-value="7">7</button>
+        <button bindtap="addNum" data-value="8">8</button>
+        <button bindtap="addNum" data-value="9">9</button>
+        <button class="ewr" bindtap="addOp" data-value="×">×</button>
+        <button bindtap="addNum" data-value="4">4</button>
+        <button bindtap="addNum" data-value="5">5</button>
+        <button bindtap="addNum" data-value="6">6</button>
+        <button class="ewr" bindtap="addOp" data-value="-">-</button>
+        <button bindtap="addNum" data-value="1">1</button>
+        <button bindtap="addNum" data-value="2">2</button>
+        <button bindtap="addNum" data-value="3">3</button>
+        <button class="ewr" bindtap="addOp" data-value="+">+</button>
+        <button style="width:50%" bindtap="addNum" data-value="0">0</button>
+        <button bindtap="addNum" data-value=".">.</button>
+        <button class="ewr" bindtap="compute">=</button>
+    </view>
+</view>

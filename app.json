@@ -4,7 +4,8 @@
         "pages/compare/compare",
         "pages/jump/jump",
         "pages/target/target",
-        "pages/userform/userform"
+        "pages/userform/userform",
+        "pages/computer/computer"
     ],
     "window":{
         "navigationBarBackgroundColor": "#346",
@@ -19,6 +20,9 @@
         },{
             "pagePath": "pages/compare/compare",
             "text": "比划比划"
+        },{
+            "pagePath": "pages/computer/computer",
+            "text": "算一算"
         }]
     }
 }
