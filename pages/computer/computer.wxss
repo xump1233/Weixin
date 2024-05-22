@@ -19,6 +19,13 @@
     align-items: flex-end;
 }
 
+.content>view{
+    font-size: 40rpx;
+}
+.content>view:last-child{
+    font-size: 60rpx;
+}
+
 .keyBox{
     height: 40%;
     display: flex;

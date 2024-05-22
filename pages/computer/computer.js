@@ -47,12 +47,62 @@ Page({
         afterContent.push('')
         this.setData({content:afterContent})
     },
-    compute(){
+    getResult(){
         let result;
         let afterContent = this.data.content
-        if(afterContent.length>=1){
-            result = afterContent[0]
+        if(afterContent.length<=1){
+            result = Number(afterContent[0])
+            afterContent.push('=')
+            afterContent.push(result)
+            this.setData({content:afterContent})
+            return 
         } 
+        else{
+            let nums = []
+            let operate = []
+            const set1 = new Set()
+            set1.add('÷')
+            set1.add('×')
+            const set2 = new Set()
+            set2.add('+')
+            set2.add('-')
+            let isCompute = false
+            afterContent.forEach(item=>{
+                if(isCompute){
+                    nums[nums.length-1] = this.compute()[operate[operate.length-1]](nums[nums.length-1],Number(item))
+                    operate.pop()
+                    isCompute = false
+                    return
+                }
+                if(set2.has(item)){
+                    operate.push(item)
+                }
+                else if(set1.has(item)){
+                    operate.push(item)
+                    isCompute = true
+                }
+                else{
+                    nums.push(Number(item))
+                }
+            })
+            result = nums[nums.length-1]
+            for(let i=nums.length-2;i>=0;i--){
+                result = this.compute()[operate[operate.length-1]](result,nums[i])
+                operate.pop()
+            }
+            afterContent.push('=')
+            afterContent.push(result)
+            this.setData({content:afterContent})
+        }
+        
+    },
+    compute(){
+        return {
+            '÷':(x,y)=>x/y,
+            '×':(x,y)=>x*y,
+            '+':(x,y)=>x+y,
+            '-':(x,y)=>x-y
+        }
     },
     /**
      * 生命周期函数--监听页面加载

@@ -1,6 +1,10 @@
 <!--pages/computer/computer.wxml-->
 <view class="computerBox">
     <view class="content">
+        <view wx:for="{{lastContent}}">
+            {{item}}
+        </view>
+        <hr/>
         <view wx:for="{{content}}">
             {{item}}
         </view>
@@ -24,6 +28,6 @@
         <button class="ewr" bindtap="addOp" data-value="+">+</button>
         <button style="width:50%" bindtap="addNum" data-value="0">0</button>
         <button bindtap="addNum" data-value=".">.</button>
-        <button class="ewr" bindtap="compute">=</button>
+        <button class="ewr" bindtap="getResult">=</button>
     </view>
 </view>
