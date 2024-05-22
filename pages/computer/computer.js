@@ -6,15 +6,9 @@ Page({
      */
     data: {
         content:['123','+','213'],
+        hasResult:false
     },
-    getSet(){
-        const set = new Set()
-        set.add('÷')
-        set.add('×')
-        set.add('+')
-        set.add('-')
-        return set
-    },
+
     addNum(e){
         let value = e.currentTarget.dataset.value
         let afterContent = this.data.content
@@ -38,6 +32,11 @@ Page({
         this.setData({content:afterContent})
     },
     addOp(e){
+        if(this.data.hasResult){
+            let lastNum = this.data.content[this.data.content.length-1]
+            this.setData({content:[lastNum.toString()]})
+            this.setData({hasResult:false})
+        }
         let value = e.currentTarget.dataset.value
         let afterContent = this.data.content
         if(afterContent[afterContent.length-1] === ''){
@@ -67,7 +66,11 @@ Page({
             set2.add('+')
             set2.add('-')
             let isCompute = false
+            let computed = false
             afterContent.forEach(item=>{
+                if(item === '='){
+                    computed = true
+                }
                 if(isCompute){
                     nums[nums.length-1] = this.compute()[operate[operate.length-1]](nums[nums.length-1],Number(item))
                     operate.pop()
@@ -85,14 +88,18 @@ Page({
                     nums.push(Number(item))
                 }
             })
+            if(computed){
+                return
+            }
             result = nums[nums.length-1]
             for(let i=nums.length-2;i>=0;i--){
-                result = this.compute()[operate[operate.length-1]](result,nums[i])
+                result = this.compute()[operate[operate.length-1]](nums[i],result)
                 operate.pop()
             }
             afterContent.push('=')
             afterContent.push(result)
             this.setData({content:afterContent})
+            this.setData({hasResult:true})
         }
         
     },

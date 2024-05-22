@@ -12,7 +12,7 @@
     <view class="keyBox">
         <button style="color: red;" bindtap="clear">C</button>
         <button bindtap="delete">DEL</button>
-        <button class="ewr">%</button>
+        <button class="ewr" bindtap="addNum" data-value="%">%</button>
         <button class="ewr" bindtap="addOp" data-value="÷">÷</button>
         <button bindtap="addNum" data-value="7">7</button>
         <button bindtap="addNum" data-value="8">8</button>

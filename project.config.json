@@ -1,5 +1,4 @@
 {
-    "appid": "touristappid",
     "compileType": "miniprogram",
     "libVersion": "2.25.3",
     "packOptions": {
@@ -19,7 +18,8 @@
             "disablePlugins": [],
             "outputPath": ""
         },
-        "condition": false
+        "condition": false,
+        "ignoreUploadUnusedFiles": true
     },
     "condition": {},
     "editorSetting": {
