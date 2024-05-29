@@ -1,0 +1,16 @@
+<view class="music_nav">
+    <view bindtap="changeItem" class="{{item==='0'?'active':''}}" data-item="0" id="nav0">音乐推荐</view>
+    <view bindtap="changeItem" class="{{item==='1'?'active':''}}" data-item="1" id="nav1">播放器</view>
+    <view bindtap="changeItem" class="{{item==='2'?'active':''}}" data-item="2" id="nav2">音乐列表</view>
+</view>
+<swiper current="{{item}}">
+    <swiper-item style="background-color: #d22;">
+        1
+    </swiper-item>
+    <swiper-item style="background-color: #Af2;">
+        2
+    </swiper-item>
+    <swiper-item style="background-color: #43f;">
+       3 
+    </swiper-item>
+</swiper>

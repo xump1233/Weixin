@@ -1,0 +1,28 @@
+/* pages/music_play/music_play.wxss */
+
+.music_nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    height: 100rpx;
+    align-items: center;
+}
+
+
+.music_nav>view{
+    height:100%;
+    /* width: 33%; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom:4rpx solid white;
+}
+
+.active{
+    background-color: rgb(49, 99, 119);
+    color: white;
+    border-color: aqua;
+}

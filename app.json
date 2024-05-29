@@ -5,7 +5,8 @@
         "pages/jump/jump",
         "pages/target/target",
         "pages/userform/userform",
-        "pages/computer/computer"
+        "pages/calculator/calculator",
+        "pages/music_play/music_play"
     ],
     "window":{
         "navigationBarBackgroundColor": "#346",
@@ -21,8 +22,11 @@
             "pagePath": "pages/compare/compare",
             "text": "比划比划"
         },{
-            "pagePath": "pages/computer/computer",
+            "pagePath": "pages/calculator/calculator",
             "text": "算一算"
+        },{
+            "pagePath": "pages/music_play/music_play",
+            "text": "听一听"
         }]
     }
 }

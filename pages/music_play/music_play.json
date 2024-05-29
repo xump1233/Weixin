@@ -1,0 +1,7 @@
+{
+    "window":{
+        "navigationBarBackgroundColor": "#346",
+        "navigationBarTitleText": "听点阴月",
+        "enablePullDownRefresh": true
+    }
+}
