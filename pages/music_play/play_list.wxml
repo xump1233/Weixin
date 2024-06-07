@@ -1,0 +1,23 @@
+<view class="play_list">
+    <view class="list_item">
+        <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+        <view class="player_text">
+            <view>无名的歌</view>
+            <view>佚名</view>
+        </view>
+    </view>
+    <view class="list_item">
+        <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+        <view class="player_text">
+            <view>无名的歌</view>
+            <view>佚名</view>
+        </view>
+    </view>
+    <view class="list_item">
+        <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+        <view class="player_text">
+            <view>无名的歌</view>
+            <view>佚名</view>
+        </view>
+    </view>
+</view>

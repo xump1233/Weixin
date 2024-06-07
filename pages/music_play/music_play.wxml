@@ -3,14 +3,26 @@
     <view bindtap="changeItem" class="{{item==='1'?'active':''}}" data-item="1" id="nav1">播放器</view>
     <view bindtap="changeItem" class="{{item==='2'?'active':''}}" data-item="2" id="nav2">音乐列表</view>
 </view>
-<swiper current="{{item}}">
-    <swiper-item style="background-color: #d22;">
-        1
+<swiper current="{{item}}" class="myswiper">
+    <swiper-item class="myswiper_item">
+        <include src="./recommend"></include>
     </swiper-item>
-    <swiper-item style="background-color: #Af2;">
-        2
+    <swiper-item style="background-color: rgba(255, 102, 102,0.1);">
+        <include src="./d_player"></include>
     </swiper-item>
-    <swiper-item style="background-color: #43f;">
-       3 
+    <swiper-item style="background-color: rgba(102, 255, 102,0.1)">
+       <include src="./play_list"></include>
     </swiper-item>
 </swiper>
+<view class="player">
+        <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+        <view class="player_text">
+            <view>无名的歌</view>
+            <view>佚名</view>
+        </view>
+        <view class="p_icons">
+            <image src="/assets/list.png" mode="aspectFit"/>
+            <image src="/assets/play.png" mode="aspectFit"/>
+            <image src="/assets/next.png" mode="aspectFit"/>
+        </view>
+</view>

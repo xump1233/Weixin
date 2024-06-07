@@ -1,0 +1,57 @@
+<view class="recommend">
+    <swiper autoplay="{{false}}" interval="2000" class="c_swiper">
+        <swiper-item class="c_swiper_item">
+            <image src="/assets/swiper1.jpg" mode="aspectFill"/>
+        </swiper-item>
+        <swiper-item class="c_swiper_item">
+            <image src="/assets/swiper2.jpg" mode="aspectFill"/>
+        </swiper-item>
+        <swiper-item class="c_swiper_item">
+            <image src="/assets/swiper3.jpg" mode="aspectFill"/>
+        </swiper-item>
+    </swiper>
+    <view class="c_icons">
+        <view class="c_icons_item">
+            <image src="/assets/FM.png" mode="aspectFill"/>
+            <view>私人FM</view>
+        </view>
+        <view class="c_icons_item">
+            <image src="/assets/recommend.png" mode="aspectFill"/>
+            <view>每日歌曲推荐</view>
+        </view>
+        <view class="c_icons_item">
+            <image src="/assets/cloud-music.png" mode="aspectFill"/>
+            <view>云音乐榜单</view>
+        </view>
+    </view>
+    <view class="hot_music">
+        <view>热门音乐</view>
+        <view>
+            <view>
+                <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+                <view>这是一首无名歌</view>
+            </view>
+            <view>
+                <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+                <view>这是一首无名歌</view>
+            </view>
+            <view>
+                <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+                <view>这是一首无名歌</view>
+            </view>
+            <view>
+                <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+                <view>这是一首无名歌</view>
+            </view>
+            <view>
+                <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+                <view>这是一首无名歌</view>
+            </view>
+            <view>
+                <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+                <view>这是一首无名歌</view>
+            </view>
+        </view>
+    </view>
+    
+</view>

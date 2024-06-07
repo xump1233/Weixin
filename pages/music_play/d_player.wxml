@@ -1,0 +1,12 @@
+<view class="d_player">
+    <view class="title">
+        <view>咯咯咯咯咯</view>
+        <view>——Author——</view>
+    </view>
+    <view class="d_image">
+        <image src="/assets/wallhaven-3l5z63.png" mode="aspectFill"/>
+    </view>
+    <view class="d_line">
+        <slider bindchange="sliderChange" activeColor="#d33a31" block-size="12" backgroundColor="#dadada" value="{{play.percent}}" />
+    </view>
+</view>
